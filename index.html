@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
   </head>
-  <body>
-    <div class="container">
+  <body itemscope itemtype="https://schema.org/profilePage">
+    <div class="container" itemscope itemtype="https://schema.org/Person">
       <header>
         <img
           class="avatar"
@@ -25,10 +25,12 @@
           width="300"
           height="300"
           alt="m1max"
+          itemprop="image"
         />
         <h1 class="titlulPaginii">
-          <strong>Ciprian Fodor</strong>
+          <strong itemprop="name">Ciprian Fodor</strong>
         </h1>
+        <h2 class="subtitlulPaginii" itemprop="jobTitle">web-developer</h2>
         <p class="descriere-principala">toate linkurile mele.despre mine</p>
       </header>
       <main>
@@ -144,7 +146,19 @@
         </ul>
       </main>
 
-      <footer></footer>
+      <footer>
+        <div itemscope itemtype="https://schema.org/Person">
+          <span itemprop="name">Jane Doe</span>
+          <img src="janedoe.jpg" itemprop="image" alt="Photo of Jane Doe" />
+          <span itemprop="jobTitle">Professor</span>
+          <span itemprop="telephone">(425) 123-4567</span>
+          <a href="mailto:jane-doe@xyz.edu" itemprop="email">
+            jane-doe@xyz.edu</a
+          >
+          Jane's home page:
+          <a href="http://www.janedoe.com" itemprop="url">janedoe.com</a>
+        </div>
+      </footer>
     </div>
 
     <script src="script.js"></script>
