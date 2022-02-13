@@ -1,8 +1,7 @@
 html {
-  background: #000
-    url(./blue-vertical-abstract-glass-texture-background-design-pattern-template-blue-vertical-abstract-background-glass-texture-169577478.jpg)
-    center center no-repeat;
-  color: #f00;
+  background: #000;
+
+  color: #fff;
 }
 
 body {
@@ -12,10 +11,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   margin: 0;
-}
-
-@media (min-width: 500px) {
-  body {
+  @media (min-width: 500px) {
     display: grid;
   }
 }
@@ -28,35 +24,26 @@ body {
   border-radius: 2rem;
   font-size: clamp(1rem, 2vw, 2rem);
   line-height: 1.5;
+  @media (min-width: 500px) {
+    margin: 7vw;
+    padding: 3rem;
+  }
+  @media (min-width: 300px) {
+    margin: 2vh;
+    padding: 2rem;
+  }
 }
 
 .descriere-principala {
   display: block;
   margin: 0.5em 0 0;
-}
-
-@media (min-width: 500px) {
-  .descriere-principala {
+  @media (min-width: 500px) {
     margin-bottom: 0.5em;
   }
 }
 
 main {
   clear: both;
-}
-
-@media (min-width: 500px) {
-  .container {
-    margin: 7vw;
-    padding: 3rem;
-  }
-}
-
-@media (min-width: 300px) {
-  .container {
-    margin: 2vh;
-    padding: 2rem;
-  }
 }
 
 header {
@@ -68,16 +55,10 @@ header {
   height: auto;
   margin: 0 1em 1em 0;
   border-radius: 50%;
-}
-
-@media (min-width: 380px) {
-  .avatar {
+  @media (min-width: 380px) {
     float: left;
   }
-}
-
-@media (min-width: 930px) {
-  .avatar {
+  @media (min-width: 930px) {
     width: clamp(130px, 14vw, 12em);
   }
 }
@@ -107,21 +88,14 @@ header {
   padding: 0.5em;
   color: #fff;
   text-decoration: none;
-}
-
-@media (min-width: 1800px) {
-  .lista-link {
+  @media (min-width: 1800px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-}
-
-@media (min-width: 800px) {
-}
-
-.lista-link:hover {
-  background: #fff;
-  color: #000;
+  &:hover {
+    background: #fff;
+    color: #000;
+  }
 }
 
 .lista-titlu,
